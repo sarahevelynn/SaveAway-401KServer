@@ -1,0 +1,25 @@
+{
+  "name": "saveaway-server",
+  "version": "1.0.0",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "knex": "^0.15.0",
+    "pg": "^7.4.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.12"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarahevelynn/SaveAway-401KServer.git"
+  },
+  "author": "SarahEvelynn Johnson",
+  "license": "MIT"
+}
