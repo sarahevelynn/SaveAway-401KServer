@@ -72,20 +72,20 @@ app.post("/basicInfo", (request, response) => {
     .catch(console.error);
 });
 
-app.post("/companyEnrollment", (request, response) => {
-  queries
-    .createCompanyEnrollment(request.body)
-    .then(companyEnrollment => {
-      response.status(201).json({ companyEnrollment: companyEnrollment });
-    })
-    .catch(console.error);
-});
-
 app.post("/freeConsultation", (request, response) => {
   queries
     .createConsultation(request.body)
     .then(freeConsultation => {
       response.status(201).json({ freeConsultation: freeConsultation });
+    })
+    .catch(console.error);
+});
+
+app.post("/companyEnrollment", (request, response) => {
+  queries
+    .createCompanyEnrollment(request.body)
+    .then(companyEnrollment => {
+      response.status(201).json({ companyEnrollment: companyEnrollment });
     })
     .catch(console.error);
 });
