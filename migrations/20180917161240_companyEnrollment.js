@@ -15,7 +15,7 @@ exports.up = function(knex, Promise) {
     table.text("AutoEnroll");
     table.text("enrollmentPercentage");
     table.text("planType");
-    table.text("payrollProvider");
+    table.text("provider");
     table.text("paymentCycle");
     table.text("Admin");
     table.text("AdminName");
