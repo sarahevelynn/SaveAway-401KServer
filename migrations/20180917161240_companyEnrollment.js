@@ -3,8 +3,8 @@ exports.up = function(knex, Promise) {
     table.increments("id").primary();
     table.text("companyName");
     table.text("accountName");
-    table.text("companyPhone");
     table.text("signupEmail");
+    table.text("companyPhone");
     table.text("signupAdressStreet");
     table.text("signupAdressApt");
     table.text("signupAdressCity");
